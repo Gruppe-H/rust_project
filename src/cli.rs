@@ -24,7 +24,7 @@ pub enum UserCommands {
     Create {
         #[arg(short, long)]
         user: Option<String>,
-        #[arg(short, long)] //TODO
+        #[arg(short, long)]
         file_path: Option<PathBuf>,
     },
     /// Updates a user entry in the database. Needs the flags --id and --user / -u
