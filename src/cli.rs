@@ -1,11 +1,9 @@
+use anyhow::Context as _;
 use clap::{ArgGroup, Parser, Subcommand};
 use mongodb::bson::doc;
 use std::path::PathBuf;
 
-use crate::{
-    db::MongoCollManager as _,
-    users_db::UserManager,
-};
+use crate::{db::MongoCollManager as _, users_db::UserManager};
 
 #[derive(Parser)]
 #[command(about = "A CLI for interacting with a database", long_about = None)]
@@ -67,7 +65,10 @@ impl CommandExecutor for UserCommands {
                     println!("Trying to create new user");
                     um.create(&user)?;
                 } else if let Some(file_path) = file_path {
-                    println!("Trying to find path");
+                    println!("Trying to read file from path: `{}`", file_path.display());
+                    let file_str = std::fs::read_to_string(&file_path).with_context(|| {
+                        format!("Could not read file from path: `{}`", file_path.display())
+                    })?;
                     todo!();
                 } else {
                     eprintln!("Needs --user flag or --file_path")
