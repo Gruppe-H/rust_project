@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Mary Jane",
+        "age": 26,
+        "email": "cph-mm@cphbusiness.dk",
+        "password": "password123",
+        "username": "mj22"
+    },
+    {
+        "name": "John Doe",
+        "age": 30,
+        "email": "john.doe@example.com",
+        "password": "johns_password",
+        "username": "johndoe85"
+    },
+    {
+        "name": "Alice Smith",
+        "age": 35,
+        "email": "alice.smith@example.com",
+        "password": "alices_password",
+        "username": "asmith"
+    }
+]
