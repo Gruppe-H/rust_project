@@ -1,5 +1,6 @@
-use clap::{Parser, Subcommand};
+use clap::{ArgGroup, Parser, Subcommand};
 use mongodb::bson::doc;
+use std::path::PathBuf;
 
 use crate::{
     db::MongoCollManager as _,
@@ -20,12 +21,13 @@ pub enum UserCommands {
         #[arg(short, long)]
         name: Option<String>,
     },
-    /// Creates a new user entry in the database. Needs the flag --user / -u
+    /// Creates a new user entry in the database. Needs either the optional flag --user / -u or --file_path / -f
+    #[command(group = ArgGroup::new("input").required(true).args(&["user", "file_path"]))]
     Create {
         #[arg(short, long)]
-        user: String,
-        //#[arg(short, long)] //TODO
-        //file: Option<String>,
+        user: Option<String>,
+        #[arg(short, long)] //TODO
+        file_path: Option<PathBuf>,
     },
     /// Updates a user entry in the database. Needs the flags --id and --user / -u
     Update {
@@ -60,9 +62,16 @@ impl CommandExecutor for UserCommands {
                 let users = um.read(filter)?;
                 users.iter().for_each(|user| println!("{}", user));
             }
-            UserCommands::Create { user } => {
-                println!("Trying to create new user");
-                um.create(&user)?;
+            UserCommands::Create { user, file_path } => {
+                if let Some(user) = user {
+                    println!("Trying to create new user");
+                    um.create(&user)?;
+                } else if let Some(file_path) = file_path {
+                    println!("Trying to find path");
+                    todo!();
+                } else {
+                    eprintln!("Needs --user flag or --file_path")
+                }
             }
             UserCommands::Update { id, user } => {
                 println!("Trying to update user with ID {} to: {}", id, user);
