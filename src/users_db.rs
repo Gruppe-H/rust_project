@@ -49,13 +49,8 @@ impl MongoCollManager for UserManager {
         Ok(())
     }
 
-    fn read(&self, opt_filter: Option<Document>) -> Result<Vec<Self::ReadResult>, Self::Error> {
+    fn read(&self, filter: Document) -> Result<Vec<Self::ReadResult>, Self::Error> {
         let mut users: Vec<User> = Vec::new();
-        let filter = if let Some(opt_filter) = opt_filter {
-            opt_filter
-        } else {
-            doc! {}
-        };
         let options = FindOptions::default();
         let cursor = self
             .coll

@@ -24,6 +24,8 @@ pub enum UserCommands {
     Create {
         #[arg(short, long)]
         user: String,
+        //#[arg(short, long)] //TODO
+        //file: Option<String>,
     },
     /// Updates a user entry in the database. Needs the flags --id and --user / -u
     Update {
@@ -55,7 +57,7 @@ impl CommandExecutor for UserCommands {
                     doc! {}
                 };
 
-                let users = um.read(Some(filter))?;
+                let users = um.read(filter)?;
                 users.iter().for_each(|user| println!("{}", user));
             }
             UserCommands::Create { user } => {
