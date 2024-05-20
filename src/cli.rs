@@ -69,8 +69,7 @@ impl CommandExecutor for UserCommands {
                     let file_str = std::fs::read_to_string(&file_path).with_context(|| {
                         format!("Could not read file from path: `{}`", file_path.display())
                     })?;
-                    create_many(&um, &file_str)?;
-                    //todo!();
+                    create_many(um, &file_str)?;
                 } else {
                     eprintln!("Needs --user flag or --file_path")
                 }
