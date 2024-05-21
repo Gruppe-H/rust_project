@@ -19,5 +19,208 @@
         "email": "alice.smith@example.com",
         "password": "alices_password",
         "username": "asmith"
+    },
+    {
+        "name": "Bob Johnson",
+        "age": 28,
+        "email": "bob.johnson@example.com",
+        "password": "bobs_password",
+        "username": "bobbyj"
+    },
+    {
+        "name": "Eve Adams",
+        "age": 22,
+        "email": "eve.adams@example.com",
+        "password": "eves_password",
+        "username": "eve22"
+    },
+    {
+        "name": "Charlie Brown",
+        "age": 31,
+        "email": "charlie.brown@example.com",
+        "password": "charlies_password",
+        "username": "charlieb"
+    },
+    {
+        "name": "David Clark",
+        "age": 40,
+        "email": "david.clark@example.com",
+        "password": "davids_password",
+        "username": "dclark"
+    },
+    {
+        "name": "Fiona Davis",
+        "age": 29,
+        "email": "fiona.davis@example.com",
+        "password": "fionas_password",
+        "username": "fdavis"
+    },
+    {
+        "name": "George Evans",
+        "age": 33,
+        "email": "george.evans@example.com",
+        "password": "georges_password",
+        "username": "gevans"
+    },
+    {
+        "name": "Hannah Fox",
+        "age": 27,
+        "email": "hannah.fox@example.com",
+        "password": "hannahs_password",
+        "username": "hfox"
+    },
+    {
+        "name": "Ian Green",
+        "age": 24,
+        "email": "ian.green@example.com",
+        "password": "ians_password",
+        "username": "igreen"
+    },
+    {
+        "name": "Jack Hall",
+        "age": 37,
+        "email": "jack.hall@example.com",
+        "password": "jacks_password",
+        "username": "jhall"
+    },
+    {
+        "name": "Karen King",
+        "age": 32,
+        "email": "karen.king@example.com",
+        "password": "karens_password",
+        "username": "kking"
+    },
+    {
+        "name": "Leo Lee",
+        "age": 26,
+        "email": "leo.lee@example.com",
+        "password": "leos_password",
+        "username": "llee"
+    },
+    {
+        "name": "Mia Martin",
+        "age": 23,
+        "email": "mia.martin@example.com",
+        "password": "mias_password",
+        "username": "mmartin"
+    },
+    {
+        "name": "Noah Nelson",
+        "age": 34,
+        "email": "noah.nelson@example.com",
+        "password": "noahs_password",
+        "username": "nnelson"
+    },
+    {
+        "name": "Olivia Owens",
+        "age": 28,
+        "email": "olivia.owens@example.com",
+        "password": "olivias_password",
+        "username": "oowens"
+    },
+    {
+        "name": "Peter Parker",
+        "age": 27,
+        "email": "peter.parker@example.com",
+        "password": "peters_password",
+        "username": "pparker"
+    },
+    {
+        "name": "Quincy Quinn",
+        "age": 25,
+        "email": "quincy.quinn@example.com",
+        "password": "quincys_password",
+        "username": "qquinn"
+    },
+    {
+        "name": "Rachel Roberts",
+        "age": 29,
+        "email": "rachel.roberts@example.com",
+        "password": "rachels_password",
+        "username": "rroberts"
+    },
+    {
+        "name": "Sam Scott",
+        "age": 36,
+        "email": "sam.scott@example.com",
+        "password": "sams_password",
+        "username": "sscott"
+    },
+    {
+        "name": "Tina Turner",
+        "age": 30,
+        "email": "tina.turner@example.com",
+        "password": "tinas_password",
+        "username": "tturner"
+    },
+    {
+        "name": "Uma Underwood",
+        "age": 28,
+        "email": "uma.underwood@example.com",
+        "password": "umas_password",
+        "username": "uunderwood"
+    },
+    {
+        "name": "Vince Vaughn",
+        "age": 33,
+        "email": "vince.vaughn@example.com",
+        "password": "vinces_password",
+        "username": "vvaughn"
+    },
+    {
+        "name": "Wendy White",
+        "age": 31,
+        "email": "wendy.white@example.com",
+        "password": "wendys_password",
+        "username": "wwhite"
+    },
+    {
+        "name": "Xander Xavier",
+        "age": 26,
+        "email": "xander.xavier@example.com",
+        "password": "xanders_password",
+        "username": "xxavier"
+    },
+    {
+        "name": "Yara Young",
+        "age": 24,
+        "email": "yara.young@example.com",
+        "password": "yaras_password",
+        "username": "yyoung"
+    },
+    {
+        "name": "Zachary Zane",
+        "age": 35,
+        "email": "zachary.zane@example.com",
+        "password": "zacharys_password",
+        "username": "zzane"
+    },
+    {
+        "name": "Amy Adams",
+        "age": 27,
+        "email": "amy.adams@example.com",
+        "password": "amys_password",
+        "username": "aadams"
+    },
+    {
+        "name": "Bruce Banner",
+        "age": 30,
+        "email": "bruce.banner@example.com",
+        "password": "bruces_password",
+        "username": "bbanner"
+    },
+    {
+        "name": "Cathy Carter",
+        "age": 29,
+        "email": "cathy.carter@example.com",
+        "password": "cathys_password",
+        "username": "ccarter"
+    },
+    {
+        "name": "Dylan Diaz",
+        "age": 28,
+        "email": "dylan.diaz@example.com",
+        "password": "dylans_password",
+        "username": "ddiaz"
     }
 ]
